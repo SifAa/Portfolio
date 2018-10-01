@@ -1,18 +1,67 @@
 @charset "UTF-8";
 /* main portfolio styles */
 
-#nav {
-	border-bottom: 1px solid black;
-	text-align: right;
+/* CSS reset - skal se ens ud i alle browsere */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
 }
-a {
+
+/* general layout */
+body {
+	font-family: 'Baskerville', 'serif';
+}
+#container {
+	min-height: 90vh;
+	min-width: 80%;
+}
+#nav {
+	display: flex;
+	border-bottom: 1px solid grey;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 8vh;
+}
+nav a {
 	text-decoration: none;
 	color: #444;
+	font-size: 20px;
+	margin: 0 15px;
 }
 #footer {
-	border-top: 1px solid black;
-	text-align: right;
+	display: flex;
+	border-top: 1px solid grey;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 5vh;
+	max-height: 10vh;
 }
 footer {
 	color: #444;
+	margin-right: 15px;
 }
+#main {
+	min-height: 85vh;
+}
+
+/* index siden */
+#main.home {
+	background: url(../images/hatter-marchhare-shadows.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-style: italic;
+}
+#main.home h2 {
+	color: dimgray;
+}
+
+
+/* contact siden */
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 1px solid black;
+	padding: 20px;
+}
+

@@ -3,23 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact</title>
-	<link rel="stylesheet" href="styles/styles.css" type="text/css">
+	<link rel="stylesheet" href="../styles/styles.css" type="text/css">
 </head>
 
 <body>
 	<div id="container">
 	<div id="nav">
 	<nav>
-		<a href="#">Home</a>
-		<a href="#">Work</a>
-		<a href="#">About</a>
+		<a href="../index.html">Home</a>
+		<a href="work.html">Work</a>
+		<a href="about.html">About</a>
 		<a href="#">Contact</a>
 	</nav>
 	</div>
 		
-	<div id="main">
-		&nbsp;
-	</div>
+ 	<div id="main"> 
+    <!-- webform -->
+    <form action="mailto:cph-sa300@cphbusiness.dk" method="post" enctype="text/plain">
+      <p>
+        <label>Your Name:</label>
+      </p>
+      <p>
+        <input type="text" name="name" placeholder="Type your name.." autofocus required>
+      </p>
+      <p>
+        <label>Your Email:</label>
+      </p>
+      <p>
+        <input type="email" name="email" placeholder="Type a valid mail adress.." required>
+      </p>
+      <p>
+        <label>Your Message:</label>
+      </p>
+      <p>
+        <textarea name="comment" placeholder="Your message..."></textarea>
+      </p>
+      <input type="submit" value="Submit Form">
+    </form>
+  	</div>
 		
 	<div id="footer">
 		<footer><small>School project</small></footer>
