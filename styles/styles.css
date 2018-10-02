@@ -12,6 +12,9 @@
 body {
 	font-family: 'Baskerville', 'serif';
 }
+h1 {
+	color: #502246;
+}
 #container {
 	min-height: 90vh;
 	min-width: 80%;
@@ -25,10 +28,15 @@ body {
 }
 nav a {
 	text-decoration: none;
-	color: #444;
+	color: #502246;
 	font-size: 20px;
 	margin: 0 15px;
 }
+/* ville ønske de ikke flyttede på hinanden når de bliver highlighted */
+nav a:hover {
+	font-weight: 550;
+}
+/* for meget blank space mellem footeren og indhold på about og contact siden */
 #footer {
 	display: flex;
 	border-top: 1px solid grey;
@@ -52,16 +60,55 @@ footer {
 	background-size: cover;
 	font-style: italic;
 }
-#main.home h2 {
-	color: dimgray;
+.home h1.name {
+	color: #502246;
+	position: relative;
+	top: 16vh;
+	left: 10vw;
+}
+.home h1.mediadesign {
+	color: #853874;
+	position: relative;
+	top: 17vh;
+	left: 13vw;
+}
+
+/* about siden */
+img.about {
+	margin-top: 8vh;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 16%;
+}
+#header.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 3vh;
+}
+#main.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.about p {
+	width: 90vh; /* Der er noget galt her, det ser ens ud om det er 90 eller 80 */
 }
 
 
 /* contact siden */
+.contact h1 {
+	position: relative;
+	top: 8vh;
+	left: 25vw;
+}
 form {
 	width: 40vw;
-	margin: 20px auto;
 	border: 1px solid black;
 	padding: 20px;
+	position: relative;
+	top: 10vh;
+	left: 25vw;
 }
 
