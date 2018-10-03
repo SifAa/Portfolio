@@ -55,21 +55,23 @@ footer {
 
 /* index siden */
 #main.home {
-	background: url(../images/hatter-marchhare-shadows.jpg);
+	background: url(../images/far-uganda.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-style: italic;
 }
 .home h1.name {
 	color: #502246;
+	font-size: 40px;
 	position: relative;
 	top: 16vh;
 	left: 10vw;
 }
 .home h1.mediadesign {
-	color: #853874;
+	color: #c87300;
+	font-size: 40px;
 	position: relative;
-	top: 17vh;
+	top: 18vh;
 	left: 13vw;
 }
 
