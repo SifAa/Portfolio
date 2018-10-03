@@ -5,7 +5,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	border: none;
 }
 
 /* general layout */
@@ -44,6 +43,7 @@ nav a:hover {
 	align-items: center;
 	min-height: 5vh;
 	max-height: 10vh;
+	padding: 1vh 1vw;
 }
 footer {
 	color: #444;
@@ -93,7 +93,7 @@ img.about {
 	justify-content: center;
 }
 .about p {
-	width: 90vh; /* Der er noget galt her, det ser ens ud om det er 90 eller 80 */
+	width: 90vh;
 }
 
 
@@ -103,12 +103,15 @@ img.about {
 	top: 8vh;
 	left: 25vw;
 }
-form {
+.contact form {
 	width: 40vw;
 	border: 1px solid black;
 	padding: 20px;
 	position: relative;
 	top: 10vh;
 	left: 25vw;
+}
+.contact p {
+	margin: 15px 0;
 }
 
