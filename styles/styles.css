@@ -106,7 +106,7 @@ img.about {
 	left: 25vw;
 }
 .contact form {
-	width: 40vw;
+	width: 35vw;
 	border: 1px solid black;
 	padding: 20px;
 	position: relative;
@@ -116,4 +116,15 @@ img.about {
 .contact p {
 	margin: 15px 0;
 }
-
+.contact input {
+	width: 90%;
+	padding: 2%;
+}
+.contact textarea {
+	width: 90%;
+	padding: 2%;
+}
+.contact #send {
+	width: 20%;
+	padding: 2%;
+}
