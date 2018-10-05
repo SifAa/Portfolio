@@ -100,6 +100,7 @@ img.about {
 
 /* contact siden */
 .contact h1 {
+	display: inline-block;
 	position: relative;
 	top: 8vh;
 	left: 25vw;
