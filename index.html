@@ -1,30 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-	<link rel="stylesheet" href="styles/styles.css" type="text/css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 
 <body>
-	<div id="container">
-	<div id="nav">
-	<nav>
-		<a href="#">Home</a>
-		<a href="pages/work.html">Work</a>
-		<a href="pages/about.html">About</a>
-		<a href="pages/contact.html">Contact</a>
+	<div id="container" class="grid grid-pad">
+	<div id="nav" class="col-1-1">
+	<nav class="col-1-3 push-right">
+		<a href="#" class="col-1-4">Home</a>
+		<a href="pages/work.html" class="col-1-4">Work</a>
+		<a href="pages/contact.html" class="col-1-4">Contact</a>
+		<img src="images/icons/search-icon.png" alt="search icon" class="col-1-4">
 	</nav>
 	</div>
 		
-	<div id="main" class="home">
-		<h1 class="name">Sif Aagaard-Svendsen</h1>
-		<h1 class="mediadesign">Mediadesign</h1>
+	<div id="main" class="home col-1-1">
+		<h1 class="name col-1-3 push-1-12">Sif Aagaard-Svendsen</h1>
+		<h1 class="mediadesign col-1-3 push-2-12">Mediadesign</h1>
+		<img id="photo-me" src="images/photo-me.jpg" alt="Sif Aagaard-Svendsen" class="col-1-7 hide-on-mobile">
+		<h2 class="push-1-12 col-11-12">About Me</h2>
+		<div class="content col-1-1">
+			<article class="push-1-12 col-5-12">I am a young woman, who finds it exciting to work with graphic design and programming.  I am inquisitive with regards to various tools. I am currently working with vector graphics, prototyping, HTML 5, CSS 3 and have been introduced to web responsive design, javascript and jQuery plugins. In addition, I also work with project planning.<br> 
+			I work best under structured conditions and gladly in teams. I like to try different things to challenge myself and have varied types of work tasks.<br> 
+			I study media design at CPH Business Academy Lyngby, which is a Danish education, so all my documentation is in Danish.</article>
+			<article class="col-5-12">I am broadly based culturally. I have since childhood loved books, movies, theater, music, video games and going to museums.<br> 
+			Literature: My favourite genre is fantasy, but I also read classic crimes such as Agatha Christie.<br> 
+			Movies: I am preferential to action and adventure movies, and I've loved Star Wars since I was four years old. But I am open to all genres.<br>
+			Theater: I enjoy going to see ballet, musicals, drama and revue, which I have had the pleasure of doing so many times.<br>
+			Music: I have a broad taste in music, but the favourites are classic rock and classical music. I especially love classic rock played with a classical orchestra.<br>
+			Video games: My favourite genre is role-playing and action-adventure.<br>
+			Museums: I have traveled most of the world with my family, and I enjoy exploring other cultures and their history. </article>
+		</div>
 	</div>
-		
-	<div id="footer">
-		<footer><small>School project</small></footer>
-	</div>
+		<footer>
+			<small class="col-1-3"><a href="https://www.cphbusiness.dk/english" target="_blank">CPH Business Academy</a></small>
+			<div class="col-1-3"><a href="https://github.com/SifAa" target="_blank" class="push-6-12"> <img src="images/icons/github-icon-small.png" alt="github profile"></a></div>
+			<div class="col-1-3"><small class="push-right">School project</small></div>
+		</footer>
 	</div>
 </body>
 </html>

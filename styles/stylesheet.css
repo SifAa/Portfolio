@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+/* simplegrid */
+@import "simplegrid.css";
+
+/* general layout */
+body {
+	font-family: 'Baskerville', 'serif';
+}
+h1, h2 {
+	color: #502246;
+}
+#nav {
+	border-bottom: 1px solid grey;
+	min-height: 8vh;
+}
+nav a {
+	text-decoration: none;
+	color: #502246;
+	font-size: 20px;
+}
+nav a:hover {
+	font-weight: 600;
+}
+#nav img {
+	max-height: 6vh;
+	width: auto;
+}
+footer {
+	display: flex;
+	border-top: 1px solid grey;
+	align-items: center;
+	min-height: 5vh;
+	padding: 1vh 1vw;
+	color: #444;
+	margin-right: 15px;
+}
+footer img {
+	max-height: 6vh;
+	width:auto;
+}
+
+/* home */
+.home article {
+	margin-bottom: 3vh;
+}
+
+/* work */
+
+/* contact */
+.contact form {
+	border: 1px solid black;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.contact p {
+	margin: 15px 0;
+}
+.contact input {
+	width: 90%;
+	padding: 2%;
+}
+.contact textarea {
+	width: 90%;
+	padding: 2%;
+}
+.contact #send {
+	width: 20%;
+	padding: 2%;
+}

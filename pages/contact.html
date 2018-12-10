@@ -1,27 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Contact</title>
-	<link rel="stylesheet" href="../styles/styles.css" type="text/css">
+<title>Get in touch!</title>
+	<link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 
 <body>
-	<div id="container">
-	<div id="nav">
-	<nav>
-		<a href="../index.html">Home</a>
-		<a href="work.html">Work</a>
-		<a href="about.html">About</a>
-		<a href="#">Contact</a>
-	</nav>
-	</div>
-	<div id="header" class="contact">
-		<h1>Get in touch</h1>
-	</div>	
- 	<div id="main" class="contact"> 
+<div id="container" class="grid grid-pad">
+  <div id="nav">
+    <nav> 
+		<a href="../index.html">Home</a> <a href="work.html">Work</a> 
+		<a href="#">Contact</a> 
+		<img src="../images/icons/search-icon.png" alt="search icon"> </nav>
+  </div>
+  <div id="main" class="contact col-1-1">
+    <h2 class="push-1-4">Get in touch</h2>
     <!-- webform -->
-    <form action="mailto:cph-sa300@cphbusiness.dk" method="post" enctype="text/plain">
+    <form action="mailto:cph-sa300@cphbusiness.dk" method="post" enctype="text/plain" class="col-1-2 push-1-4">
       <p>
         <label>Your Name:</label>
       </p>
@@ -42,11 +38,12 @@
       </p>
       <input type="submit" value="Submit Form" id="send">
     </form>
-  	</div>
-		
-	<div id="footer">
-		<footer><small>School project</small></footer>
-	</div>
-	</div>
+  </div>
+		<footer>
+			<small class="col-1-3"><a href="https://www.cphbusiness.dk/english" target="_blank">CPH Business Academy</a></small>
+			<div class="col-1-3"><a href="https://github.com/SifAa" target="_blank" class="push-6-12"> <img src="../images/icons/github-icon-small.png" alt="github profile"></a></div>
+			<div class="col-1-3"><small class="push-right">School project</small></div>
+		</footer>
+</div>
 </body>
 </html>
