@@ -7,30 +7,40 @@
 body {
 	font-family: 'Baskerville', 'serif';
 }
+#main {
+	padding-top: 2vh;
+}
 h1, h2 {
 	color: #502246;
 }
 #nav {
+	overflow: hidden;
+	background-color: white;
 	border-bottom: 1px solid grey;
-	min-height: 8vh;
+	height: 8vh;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 nav a {
 	text-decoration: none;
 	color: #502246;
 	font-size: 20px;
+	padding: 15px 0px;
 }
 nav a:hover {
 	font-weight: 600;
 }
 #nav img {
-	max-height: 6vh;
+	max-height: 40px;
 	width: auto;
+	margin: 8px 0px;
 }
 footer {
 	display: flex;
 	border-top: 1px solid grey;
 	align-items: center;
-	min-height: 5vh;
+	height: 5vh;
 	padding: 1vh 1vw;
 	color: #444;
 	margin-right: 15px;
@@ -44,9 +54,25 @@ footer img {
 .home article {
 	margin-bottom: 3vh;
 }
+.home .title {
+	margin-top: 10vh;
+}
+.home img {
+	margin-top: 8vh;
+	border-radius: 1%;
+}
 
 /* work */
-
+.work section {
+	padding-top: 8vh;
+	min-height: 92vh;
+}
+/*.work .project {
+	padding-top: 8vh;
+}*/
+.project img {
+	margin: 2vh 0;
+}
 /* contact */
 .contact form {
 	border: 1px solid black;
@@ -68,3 +94,11 @@ footer img {
 	width: 20%;
 	padding: 2%;
 }
+
+/* Kun tablets i landscape mode og desktops */
+@media screen and (min-width: 768px) {
+	/* Work */
+	.work p {
+		column-count: 2;
+	}
+} 
