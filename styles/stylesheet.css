@@ -3,24 +3,25 @@
 /* simplegrid */
 @import "simplegrid.css";
 
+
 /* general layout */
 body {
-	font-family: 'Baskerville', 'serif';
+	font-family: 'Baskerville', serif;
 }
-#main {
+/*#main {
 	padding-top: 2vh;
-}
+}*/
 h1, h2 {
 	color: #502246;
 }
 #nav {
-	overflow: hidden;
 	background-color: white;
 	border-bottom: 1px solid grey;
-	height: 8vh;
+	height: 50px;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
+	max-width: 1140px;
 }
 nav a {
 	text-decoration: none;
@@ -28,7 +29,7 @@ nav a {
 	font-size: 20px;
 	padding: 15px 0px;
 }
-nav a:hover {
+nav a:hover, #page {
 	font-weight: 600;
 }
 #nav img {
@@ -40,14 +41,15 @@ footer {
 	display: flex;
 	border-top: 1px solid grey;
 	align-items: center;
-	height: 5vh;
+	height: 50px;
 	padding: 1vh 1vw;
 	color: #444;
 	margin-right: 15px;
 }
 footer img {
-	max-height: 6vh;
+	max-height: 50px;
 	width:auto;
+	margin-top: 10px;
 }
 
 /* home */
@@ -55,25 +57,28 @@ footer img {
 	margin-bottom: 3vh;
 }
 .home .title {
-	margin-top: 10vh;
+	margin-top: 50px;
 }
 .home img {
-	margin-top: 8vh;
+	margin-top: 50px;
 	border-radius: 1%;
 }
 
 /* work */
 .work section {
-	padding-top: 8vh;
+	padding-top: 50px;
 	min-height: 92vh;
 }
 /*.work .project {
 	padding-top: 8vh;
 }*/
 .project img {
-	margin: 2vh 0;
+	margin: 5px 0;
 }
 /* contact */
+.contact h2 {
+	margin-top: 50px;
+}
 .contact form {
 	border: 1px solid black;
 	padding: 20px;
@@ -96,7 +101,7 @@ footer img {
 }
 
 /* Kun tablets i landscape mode og desktops */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	/* Work */
 	.work p {
 		column-count: 2;
