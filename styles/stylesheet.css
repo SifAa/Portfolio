@@ -20,8 +20,9 @@ h1, h2 {
 	height: 50px;
 	position: fixed;
 	top: 0;
-	width: 100vw;
+	width: 88%;
 	max-width: 1140px;
+	margin-top: 0;
 }
 nav a {
 	text-decoration: none;
@@ -44,7 +45,6 @@ footer {
 	height: 50px;
 	padding: 1vh 1vw;
 	color: #444;
-	margin-right: 15px;
 }
 footer img {
 	max-height: 50px;
@@ -75,6 +75,10 @@ footer img {
 .project img {
 	margin: 5px 0;
 }
+.arrow {
+	padding-top: 20px;
+}
+
 /* contact */
 .contact h2 {
 	margin-top: 50px;
@@ -82,7 +86,7 @@ footer img {
 .contact form {
 	border: 1px solid black;
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 .contact p {
 	margin: 15px 0;
@@ -99,11 +103,20 @@ footer img {
 	width: 20%;
 	padding: 2%;
 }
-
+		
 /* Kun tablets i landscape mode og desktops */
 @media screen and (min-width: 1024px) {
+	.mobile-only {
+		display: none;
+}
 	/* Work */
 	.work p {
 		column-count: 2;
+	}
+	.work .icon-space {
+		height: 66px;
+	}
+	.project-img {
+		max-height: 250px;
 	}
 } 
