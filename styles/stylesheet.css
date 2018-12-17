@@ -17,10 +17,10 @@ h1, h2 {
 #nav {
 	background-color: white;
 	border-bottom: 1px solid grey;
-	height: 50px;
+	height: 8vh;
 	position: fixed;
 	top: 0;
-	width: 88%;
+	width: 93%;
 	max-width: 1140px;
 	margin-top: 0;
 }
@@ -38,18 +38,19 @@ nav a:hover, #page {
 	width: auto;
 	margin: 8px 0px;
 }
-footer {
-	display: flex;
+#footer {
 	border-top: 1px solid grey;
-	align-items: center;
-	height: 50px;
+	height: 8vh;
 	padding: 1vh 1vw;
-	color: #444;
+	background-color: white;
+	margin-top: 1vh;
 }
 footer img {
 	max-height: 50px;
 	width:auto;
-	margin-top: 10px;
+}
+footer small {
+	padding-top: 15px;
 }
 
 /* home */
@@ -66,8 +67,11 @@ footer img {
 
 /* work */
 .work section {
-	padding-top: 50px;
+	padding-top: 8vh;
 	min-height: 92vh;
+}
+.work article h6 {
+	display: none;
 }
 /*.work .project {
 	padding-top: 8vh;
@@ -80,6 +84,9 @@ footer img {
 }
 
 /* contact */
+.contact #main {
+	min-height: 90vh;
+}
 .contact h2 {
 	margin-top: 50px;
 }
@@ -109,8 +116,11 @@ footer img {
 	.mobile-only {
 		display: none;
 }
+	#nav {
+		width: 88%;
+	}
 	/* Work */
-	.work p {
+	.work article {
 		column-count: 2;
 	}
 	.work .icon-space {
