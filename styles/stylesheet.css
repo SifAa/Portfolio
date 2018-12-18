@@ -17,10 +17,10 @@ h1, h2 {
 #nav {
 	background-color: white;
 	border-bottom: 1px solid grey;
-	height: 8vh;
+	height: 50px;
 	position: fixed;
 	top: 0;
-	width: 93%;
+	width: 88%;
 	max-width: 1140px;
 	margin-top: 0;
 }
@@ -67,7 +67,7 @@ footer small {
 
 /* work */
 .work section {
-	padding-top: 8vh;
+	padding-top: 50px;
 	min-height: 92vh;
 }
 .work article h6 {
@@ -109,6 +109,9 @@ footer small {
 .contact #send {
 	width: 20%;
 	padding: 2%;
+	border: 1px solid grey;
+	background-color: white;
+	border-radius: 5px;
 }
 		
 /* Kun tablets i landscape mode og desktops */
@@ -116,9 +119,6 @@ footer small {
 	.mobile-only {
 		display: none;
 }
-	#nav {
-		width: 88%;
-	}
 	/* Work */
 	.work article {
 		column-count: 2;
